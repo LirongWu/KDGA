@@ -4,7 +4,7 @@ This is a PyTorch implementation of the Knowledge Distillation Improves Graph Au
 
 * Dataset Loader (Cora, Citeseer, Texas, Cornell, Wisconsin, Actor, Chameleon, and Squirrel)
 
-* GCN Classifier for implementing $p(Y|A,X)$, and Graph Augmentation Module - GraphAug for implementing $p(\widehat{A}|A,X)$
+* GCN Classifier for implementing $p(Y|A,X)$, and Graph Augmentation Module for implementing $p(\widehat{A}|A,X)$
 
 * Training paradigm for pre-training and fine-tuning on eight real-world datasets
 
@@ -19,7 +19,7 @@ Graph (structure) augmentation aims to perturb the graph structure through heuri
 
 
 <p align="center">
-  <img src='./figure/framework.png' width="800">
+  <img src='./figure/framework.PNG' width="800">
 </p>
 
 
