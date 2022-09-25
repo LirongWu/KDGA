@@ -4,7 +4,7 @@ This is a PyTorch implementation of the Knowledge Distillation Improves Graph Au
 
 * Dataset Loader (Cora, Citeseer, Texas, Cornell, Wisconsin, Actor, Chameleon, and Squirrel)
 
-* GCN Classifier for implementing $$p(Y|A,X)$$, and Graph Augmentation Module - GraphAug for implementing $p(\widehat{A}|A,X)$
+* GCN Classifier for implementing $p(Y|A,X)$, and Graph Augmentation Module - GraphAug for implementing $p(\widehat{A}|A,X)$
 
 * Training paradigm for pre-training and fine-tuning on eight real-world datasets
 
@@ -14,9 +14,13 @@ This is a PyTorch implementation of the Knowledge Distillation Improves Graph Au
 
 ## Introduction
 
-Graph (structure) augmentation aims to perturb the graph structure through heuristic or probabilistic rules, enabling the nodes to capture richer contextual information and thus improving generalization performance. While there have been a few graph structure augmentation methods proposed recently, none of them are aware of a potential \textit{negative augmentation} problem, which may be caused by overly severe distribution shifts between the original and augmented graphs. In this paper, we take an important graph property, namely graph homophily, to analyze the distribution shifts between the two graphs and thus measure the severity of an augmentation algorithm suffering from negative augmentation. To tackle this problem, we propose a novel Knowledge Distillation for Graph Augmentation (KDGA) framework, which helps to reduce the potential negative effects of distribution shifts, i.e., negative augmentation problem. Specifically, KDGA extracts the knowledge of any GNN teacher model trained on the augmented graphs and injects it into a partially parameter-shared student model that is tested on the original graph. As a simple but efficient framework, KDGA is applicable to a variety of existing graph augmentation methods and can significantly improve the performance of various GNN architectures. For three popular graph augmentation methods, namely GAUG, MH-Aug, and GraphAug, the experimental results show that the learned student models outperform their vanilla implementations by an average accuracy of 4.6% (GAUG), 4.2% (MH-Aug), and 4.6% (GraphAug) on eight graph datasets.
+Graph (structure) augmentation aims to perturb the graph structure through heuristic or probabilistic rules, enabling the nodes to capture richer contextual information and thus improving generalization performance. While there have been a few graph structure augmentation methods proposed recently, none of them are aware of a potential \textit{negative augmentation} problem, which may be caused by overly severe distribution shifts between the original and augmented graphs. In this paper, we take an important graph property, namely graph homophily, to analyze the distribution shifts between the two graphs and thus measure the severity of an augmentation algorithm suffering from negative augmentation. To tackle this problem, we propose a novel Knowledge Distillation for Graph Augmentation (KDGA) framework, which helps to reduce the potential negative effects of distribution shifts, i.e., negative augmentation problem. Specifically, KDGA extracts the knowledge of any GNN teacher model trained on the augmented graphs and injects it into a partially parameter-shared student model that is tested on the original graph. As a simple but efficient framework, KDGA is applicable to a variety of existing graph augmentation methods and can significantly improve the performance of various GNN architectures. For three popular graph augmentation methods, the experimental results show that the learned student models outperform their vanilla implementations by an average accuracy of 4.6% (GAUG), 4.2% (MH-Aug), and 4.6% (GraphAug) on eight graph datasets.
 
-![](figure/framework.png)
+
+
+<p align="center">
+  <img src='./figure/framework.png' width="800">
+</p>
 
 
 
@@ -39,7 +43,7 @@ Graph (structure) augmentation aims to perturb the graph structure through heuri
 * model.py  
   
   * GCNLayer() -- GCN Layer
-  * GCN_Classifier() -- GCN Classifier for implementing the function $$p(Y|A,X)$$
+  * GCN_Classifier() -- GCN Classifier for implementing the function $p(Y|A,X)$
   * Augmentor() -- Graph Augmentation Module - GraphAug for implementing the function $p(\widehat{A}|A,X)$
   * com_distillation_loss() -- Calculate the KL-divergence Loss for knowledge distillation
 * dataset.py  
