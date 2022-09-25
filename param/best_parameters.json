@@ -1,0 +1,170 @@
+{
+    "cora": {
+        "0": {
+            "dataset": "cora",
+            "hid_dim": 256,
+            "dropout": 0.6,
+            "alpha": 0.3,
+            "temp_ga": 1.0,
+            "temp_kd": 1.0,
+            "ratio_ga": 0.1,
+            "ratio_kd": 20,
+            "lr": 0.01,
+            "weight_decay": 0.0005,
+            "ga_epochs": 200,
+            "nc_epochs": 50,
+            "n_epochs": 500,
+            "seed": 2022,
+            "save_mode": 1,
+            "loss_mode": 0,
+            "data_mode": 0
+        }
+    },
+    "citeseer": {
+        "0": {
+            "dataset": "citeseer",
+            "hid_dim": 256,
+            "dropout": 0.6,
+            "alpha": 0.5,
+            "temp_ga": 1.0,
+            "temp_kd": 1.0,
+            "ratio_ga": 1.0,
+            "ratio_kd": 5.0,
+            "lr": 0.01,
+            "weight_decay": 0.0005,
+            "ga_epochs": 300,
+            "nc_epochs": 300,
+            "n_epochs": 500,
+            "seed": 2022,
+            "save_mode": 1,
+            "loss_mode": 0,
+            "data_mode": 1
+        }
+    },
+    "cornell": {
+        "0": {
+            "dataset": "cornell",
+            "hid_dim": 128,
+            "dropout": 0.5,
+            "alpha": 1.0,
+            "temp_ga": 1.0,
+            "temp_kd": 1.3,
+            "ratio_ga": 0.1,
+            "ratio_kd": 1.0,
+            "lr": 5e-3,
+            "weight_decay": 0.0005,
+            "ga_epochs": 300,
+            "nc_epochs": 200,
+            "n_epochs": 500,
+            "seed": 2022,
+            "save_mode": 1,
+            "loss_mode": 0,
+            "data_mode": 2
+        }
+    },
+    "texas": {
+        "0": {
+            "dataset": "texas",
+            "hid_dim": 128,
+            "dropout": 0.5,
+            "alpha": 1.0,
+            "temp_ga": 1.0,
+            "temp_kd": 1.2,
+            "ratio_ga": 0.5,
+            "ratio_kd": 1.0,
+            "lr": 1e-3,
+            "weight_decay": 0.0005,
+            "ga_epochs": 200,
+            "nc_epochs": 50,
+            "n_epochs": 500,
+            "seed": 2022,
+            "save_mode": 1,
+            "loss_mode": 0,
+            "data_mode": 3
+        }
+    },
+    "wisconsin": {
+        "0": {
+            "dataset": "wisconsin",
+            "hid_dim": 64,
+            "dropout": 0.7,
+            "alpha": 1.0,
+            "temp_ga": 1.0,
+            "temp_kd": 1.1,
+            "ratio_ga": 1.0,
+            "ratio_kd": 0.5,
+            "lr": 1e-3,
+            "weight_decay": 1e-3,
+            "ga_epochs": 200,
+            "nc_epochs": 50,
+            "n_epochs": 500,
+            "seed": 2022,
+            "save_mode": 1,
+            "loss_mode": 0,
+            "data_mode": 4
+        }
+    },
+    "film": {
+        "0": {
+            "dataset": "film",
+            "hid_dim": 128,
+            "dropout": 0.6,
+            "alpha": 0.3,
+            "temp_ga": 1.0,
+            "temp_kd": 1.4,
+            "ratio_ga": 0.5,
+            "ratio_kd": 0.1,
+            "lr": 5e-3,
+            "weight_decay": 0.0005,
+            "ga_epochs": 200,
+            "nc_epochs": 50,
+            "n_epochs": 500,
+            "seed": 2022,
+            "save_mode": 1,
+            "loss_mode": 0,
+            "data_mode": 5
+        }
+    },
+    "squirrel": {
+        "0": {
+            "dataset": "squirrel",
+            "hid_dim": 256,
+            "dropout": 0.5,
+            "alpha": 0.3,
+            "temp_ga": 1.0,
+            "temp_kd": 1.0,
+            "ratio_ga": 0.1,
+            "ratio_kd": 1.0,
+            "lr": 5e-3,
+            "weight_decay": 0.0005,
+            "ga_epochs": 300,
+            "nc_epochs": 200,
+            "n_epochs": 500,
+            "seed": 2022,
+            "save_mode": 1,
+            "loss_mode": 0,
+            "data_mode": 6
+        }
+    },
+    "chameleon": {
+        "0": {
+            "dataset": "chameleon",
+            "hid_dim": 256,
+            "dropout": 0.5,
+            "alpha": 0.3,
+            "temp_ga": 1.0,
+            "temp_kd": 1.1,
+            "ratio_ga": 1.0,
+            "ratio_kd": 1.0,
+            "lr": 0.01,
+            "weight_decay": 0.0005,
+            "ga_epochs": 50,
+            "nc_epochs": 200,
+            "n_epochs": 500,
+            "seed": 2022,
+            "save_mode": 1,
+            "loss_mode": 0,
+            "data_mode": 7
+        }
+    }
+}
