@@ -80,9 +80,11 @@ If you find this project useful for your research, please use the following BibT
 
 ```
 @article{wu2022knowledge,
-  title={Knowledge Distillation Improves Graph Structure Augmentation for Graph Neural Networks},
-  author={Wu, Lirong and Lin, Haitao and Huang, Yufei and  and Li, Stan Z.},
+  title={Knowledge distillation improves graph structure augmentation for graph neural networks},
+  author={Wu, Lirong and Lin, Haitao and Huang, Yufei and Li, Stan Z},
   journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={11815--11827},
   year={2022}
 }
 ```
